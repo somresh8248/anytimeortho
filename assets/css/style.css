@@ -18372,3 +18372,8 @@ body {
     padding-top: 204px;
   }
 }
+
+.main-menu ul li.active > a {
+    color: #58e643; 
+    font-weight: 700;
+}

@@ -257,7 +257,7 @@
 
                 </div>
 
-                
+
                 <div class="col-lg-7">
                     <div class="team-content">
                         <h2 class="mb-0 mt-n2">Dr. Likith Srinivas </h2>
@@ -650,7 +650,33 @@
     <script src="assets/js/ajax-mail.js"></script>
     <!-- Main Js File -->
     <script src="assets/js/main.js"></script>
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
 
+    let currentPage = window.location.pathname.split("/").pop();
+
+    if (currentPage === "") {
+        currentPage = "index.html";
+    }
+
+    document.querySelectorAll(".main-menu ul li a").forEach(function (link) {
+
+        let linkPage = link.getAttribute("href");
+
+        // Normal page match
+        if (linkPage === currentPage) {
+            link.parentElement.classList.add("active");
+        }
+
+        // Doctor details page should activate Team menu
+        if (currentPage.includes("Dr_") && linkPage === "team.html") {
+            link.parentElement.classList.add("active");
+        }
+
+    });
+
+});
+</script>
 </body>
 
 </html>

@@ -101,7 +101,8 @@
                   class="text-reset">info@anytimeortho.in</a>
               </li>
               <li>
-                <i class="far fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/AKQnPa6YfU8HNser7" class="text-reset">Varthur–Whitefield, Bengaluru, Karnataka</a>
+                <i class="far fa-map-marker-alt"></i><a href="https://maps.app.goo.gl/AKQnPa6YfU8HNser7"
+                  class="text-reset">Varthur–Whitefield, Bengaluru, Karnataka</a>
               </li>
               <li><i class="far fa-clock"></i>Open 24 hrs</li>
             </ul>
@@ -254,9 +255,9 @@
             <h4 class="pt-2 mb-10">Address</h4>
             <p class="fs-md">
               <i class="far fa-map-marker-alt me-2"></i>Varthur–Whitefield, Bengaluru, Karnataka<br>
-                <span style="font-size:18px;margin-left: 18px;">
-                  (U-turn before the hospital available.)
-                </span>
+              <span style="font-size:18px;margin-left: 18px;">
+                (U-turn before the hospital available.)
+              </span>
             </p>
             <h4 class="pt-2 mb-2">Customer Supports</h4>
             <h4 class="h3 font-theme2 mb-0">
@@ -359,7 +360,8 @@
               </div>
               <div class="address-line">
                 <i class="far fa-map-marker-alt text-theme fs-md"></i>
-                <a href="https://maps.app.goo.gl/AKQnPa6YfU8HNser7" class="text-reset fs-md">Varthur–Whitefield, Bengaluru, Karnataka</a>
+                <a href="https://maps.app.goo.gl/AKQnPa6YfU8HNser7" class="text-reset fs-md">Varthur–Whitefield,
+                  Bengaluru, Karnataka</a>
               </div>
             </div>
           </div>
@@ -425,6 +427,24 @@
   <script src="assets/js/ajax-mail.js"></script>
   <!-- Main Js File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let currentPage = window.location.pathname.split("/").pop();
+
+      if (currentPage === "") {
+        currentPage = "index.html";
+      }
+
+      document.querySelectorAll(".main-menu ul li a").forEach(function (link) {
+        let linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+          link.parentElement.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>

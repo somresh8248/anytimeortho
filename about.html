@@ -644,7 +644,7 @@
             </div>
             <div class="team-body" style="margin-top: 16px;">
               <h3 class="h4 mb-0">
-               Dr. Likith Srinivas
+                Dr. Likith Srinivas
               </h3>
               <p class="fs-xs degi text-theme mb-2">MBBS, M.S.ORTHOPAEDICS</p>
               <p class="fs-xs">
@@ -1006,6 +1006,24 @@
   <script src="assets/js/ajax-mail.js"></script>
   <!-- Main Js File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let currentPage = window.location.pathname.split("/").pop();
+
+      if (currentPage === "") {
+        currentPage = "index.html";
+      }
+
+      document.querySelectorAll(".main-menu ul li a").forEach(function (link) {
+        let linkPage = link.getAttribute("href");
+
+        if (linkPage === currentPage) {
+          link.parentElement.classList.add("active");
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
