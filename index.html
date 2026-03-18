@@ -46,6 +46,41 @@
   <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
+  <style>
+    .icon-box {
+      width: 55px;
+      min-width: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 576px) {
+      .d-flex {
+        align-items: flex-start !important;
+      }
+
+      .icon-box {
+        width: 45px;
+        min-width: 45px;
+        margin-right: 12px !important;
+      }
+
+      .icon-box i {
+        font-size: 22px !important;
+      }
+
+      .media-body h3 {
+        font-size: 16px;
+      }
+
+      .media-body p {
+        font-size: 13px;
+      }
+    }
+  </style>
+
+
 </head>
 
 <body class="">
@@ -90,8 +125,8 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="service.html">Services</a></li>
-          <li><a href="team.html">Team</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="team.html">Doctors</a></li>
+          <!-- <li><a href="blog.html">Blog</a></li> -->
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
@@ -113,7 +148,7 @@
               </li>
               <li>
                 <i class="far fa-map-marker-alt"></i> <a href="https://maps.app.goo.gl/AKQnPa6YfU8HNser7"
-                  class="text-reset">Varthur–Whitefield, Bengaluru, Karnataka</a>
+                  class="text-reset">Anytime Ortho, Varthur–Whitefield, Bengaluru, Karnataka</a>
               </li>
               <li><i class="far fa-clock"></i>Open 24 hrs</li>
             </ul>
@@ -176,8 +211,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="service.html">Services</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="team.html">Doctors</a></li>
+                        <!-- <li><a href="blog.html">Blog</a></li> -->
                         <li><a href="contact.html">Contact Us</a></li>
                       </ul>
                     </nav>
@@ -203,7 +238,7 @@
         </div>
       </div>
     </div>
-    <div class="header-note d-none d-xl-block">
+    <!-- <div class="header-note d-none d-xl-block">
       <div class="note-inner">
         <div class="container custom-container">
           <p class="note-text">
@@ -213,7 +248,7 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
   </header>
   <!--==============================
       Hero Area
@@ -324,7 +359,7 @@
           data-ls-tablet="left: 100px; top: 340px;" data-ls-laptop="left: 100px; top: 270px;"
           style="left: 300px; top: 352px; font-size: 72px; font-weight: 700"
           data-ls="delayin: 0; easingin: easeInOutSine; texttransitionin: true; textstartatin: transitioninstart; textdurationin: 2000; texttypein: words_asc; textshiftin: 200; textoffsetyin: -100; offsetyout: -100; durationout: 2000; ">
-          Care in Varthur , Bangalore
+          Care in Varthur, Bangalore
         </h1>
         <p class="ls-l ls-responsive ls-hide-md" data-ls-mobile="left: 100px; top: 400px;"
           data-ls-tablet="left: 100px; top: 400px;"
@@ -513,7 +548,7 @@
               <p>
                 <i class="fal fa-exclamation-circle text-theme me-2"></i>
                 Delivering tomorrow’s health care for your family.
-                <a href="team.html"><strong>View Doctor’s Timetable</strong><i
+                <a href="contact.html"><strong>Contact us for appointments</strong><i
                     class="far fa-long-arrow-right ms-2"></i></a>
               </p>
             </div>
@@ -540,9 +575,9 @@
           <div class="col-xl-7 col-xxl-6 align-self-center">
             <h2 class="h1">What Sets Us Apart</h2>
             <div class="row pt-3">
-              <div class="col-sm-6 col-lg-5 col-xl-6">
+              <div class="col-12 col-sm-6 col-lg-5 col-xl-6">
                 <div class="d-flex mb-25">
-                  <span class="text-theme mr-20"><i class="fas fa-ambulance fa-3x lh-1"></i></span>
+                  <span class="text-theme mr-20 icon-box"><i class="fas fa-ambulance fa-3x"></i></span>
                   <div class="media-body">
                     <h3 class="h5 mb-2 pb-1">24×7 Emergency Readiness</h3>
                     <p class="mb-0 fs-xs">
@@ -552,9 +587,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-5 col-xl-6">
+              <div class="col-12 col-sm-6 col-lg-5 col-xl-6">
                 <div class="d-flex mb-25">
-                  <span class="text-theme mr-20"><i class="fas fa-user-md fa-3x lh-1"></i></span>
+                  <span class="text-theme mr-20 icon-box"><i class="fas fa-user-md fa-3x"></i></span>
                   <div class="media-body">
                     <h3 class="h5 mb-2 pb-1">Experienced Orthopaedic Specialist</h3>
                     <p class="mb-0 fs-xs">
@@ -564,9 +599,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-5 col-xl-6">
+              <div class="col-12 col-sm-6 col-lg-5 col-xl-6">
                 <div class="d-flex mb-25">
-                  <span class="text-theme mr-20"><i class="fas fa-x-ray fa-3x lh-1"></i></span>
+                  <span class="text-theme mr-20 icon-box"><i class="fas fa-x-ray fa-3x"></i></span>
                   <div class="media-body">
                     <h3 class="h5 mb-2 pb-1">Advanced Diagnostics On-site</h3>
                     <p class="mb-0 fs-xs">
@@ -576,9 +611,11 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-5 col-xl-6">
+              <div class="col-12 col-sm-6 col-lg-5 col-xl-6">
                 <div class="d-flex mb-25">
-                  <span class="text-theme mr-20"><i class="fas fa-bone fa-3x lh-1"></i></span>
+                  <span class="text-theme mr-20 icon-box"
+                    style="width:40px; display:inline-flex; justify-content:center;"><i
+                      class="fas fa-wheelchair fa-3x"></i></span>
                   <div class="media-body">
                     <h3 class="h5 mb-2 pb-1">Comprehensive Ortho Services</h3>
                     <p class="mb-0 fs-xs">
@@ -588,9 +625,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-5 col-xl-6">
+              <div class="col-12 col-sm-6 col-lg-5 col-xl-6">
                 <div class="d-flex mb-25">
-                  <span class="text-theme mr-20"><i class="fas fa-hand-holding-heart fa-3x lh-1"></i></span>
+                  <span class="text-theme mr-20 icon-box"><i class="fas fa-hand-holding-heart fa-3x"></i></span>
                   <div class="media-body">
                     <h3 class="h5 mb-2 pb-1">Patient-First Approach</h3>
                     <p class="mb-0 fs-xs">
@@ -616,7 +653,7 @@
             <span class="h3 text-theme sec-subtitle" style="font-family: Arial, sans-serif;">Expert care you can
               trust</span>
             <h2 class="h1">Meet Our Doctors</h2>
-            <p>
+            <p style="font-size: 20px;">
               Our orthopaedic care is led by an experienced specialist dedicated to delivering precise diagnosis,
               advanced treatment, and compassionate support for every patient.
             </p>
@@ -783,8 +820,8 @@
           <div class="col-xl-6 align-self-end">
             <div class="about-box1 bg-white">
               <h2 class="h1 mb-3 pb-1">
-                You will not regret
-                <span class="text-theme">believing in us. for this section</span>
+                “Trust us with your care,and experience
+                <span class="text-theme">the compassion and expertise you deserve.”</span>
               </h2>
               <p>
                 At Anytime Ortho, we provide 24×7 emergency orthopaedic care for fractures, trauma, and accidents,
@@ -1012,7 +1049,11 @@
       <img src="assets/img/icon/icon-2.png" alt="Icon" />
     </div>
     <div class="container">
-      <div class="brand-wrap1" data-bg-src="assets/img/bg/bg-5.jpg">
+      <div class="brand-wrap1" style="
+     background: 
+     linear-gradient(to right, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.6) 30%, rgba(255,255,255,0.6) 70%, rgba(255,255,255,0.85) 100%),
+     url('assets/img/bg/bg-5.jpg') center/cover no-repeat;
+     ">
         <div class="row">
           <div class="col-md-10 col-lg-8 col-xl-6">
             <div class="section-title">
@@ -1146,8 +1187,8 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a></li>
                   <li><a href="service.html">Services</a></li>
-                  <li><a href="team.html">Team</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="team.html">Doctors</a></li>
+                  <!-- <li><a href="#">Blog</a></li> -->
                   <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
@@ -1166,7 +1207,7 @@
               </div>
               <div class="address-line">
                 <i class="far fa-map-marker-alt text-theme fs-md"></i>
-                <a href="https://maps.app.goo.gl/AKQnPa6YfU8HNser7" class="text-reset fs-md">Varthur–Whitefield,
+                <a href="https://maps.app.goo.gl/AKQnPa6YfU8HNser7" class="text-reset fs-md">Anytime Ortho, Varthur–Whitefield,
                   Bengaluru, Karnataka</a>
               </div>
             </div>
